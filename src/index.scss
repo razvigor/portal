@@ -1,0 +1,72 @@
+@import './sass/varible';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: $green;
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  ul {
+    display: flex;
+    column-gap: 8px;
+    color: #fff;
+    font-weight: 700;
+    a {
+      color: inherit;
+    }
+  }
+}
+.title {
+  text-align: center;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+  article {
+    width: calc(33.33% - 20px);
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    .footer {
+      a {
+        background-color: $green;
+        color: #fff;
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+img {
+  max-width: 100%;
+}
+footer {
+  background-color: $black;
+  color: #fff;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
